@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gabardo Júnior | Treinador do Agro Esporte Clube</title>
-<meta name="description" content="Site oficial de Gabardo Júnior, treinador do Agro Esporte Clube para a temporada 2027. Conheça sua trajetória, modelo de jogo, experiências e notícias.">
+<meta name="description" content="Site oficial de Gabardo Júnior, treinador do Agro Esporte Clube para a temporada 2027. Conheça sua trajetória, experiências, fotos e notícias.">
 <link rel="canonical" href="https://www.gabardojr.com.br">
 <meta property="og:title" content="Gabardo Júnior | Treinador do Agro Esporte Clube">
 <meta property="og:description" content="Gabardo Júnior é o treinador do Agro Esporte Clube para a temporada 2027.">
@@ -91,10 +91,10 @@ section{position:relative;scroll-margin-top:72px}
 .hero-sticky{position:relative;height:100svh;min-height:640px;max-height:1100px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;opacity:0;transition:opacity 1.4s var(--ease)}
 .hero-bg.is-active{opacity:1}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:right 22%;translate:0 calc(var(--p,0) * 18%)}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:right 8%;translate:0 calc(var(--p,0) * 18%)}
 .hero-bg.is-active img{animation:kenburns 9s linear both}
 @keyframes kenburns{from{scale:1.06}to{scale:1}}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,14,15,.9) 0%,rgba(14,14,15,.45) 42%,transparent 70%),linear-gradient(0deg,var(--ink) 0%,transparent 35%);}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,14,15,.82) 0%,rgba(14,14,15,.4) 36%,transparent 58%),linear-gradient(0deg,var(--ink) 0%,transparent 35%);}
 @keyframes cue{to{top:100%}}
 .beam{position:absolute;top:-20%;width:38vw;height:140%;background:linear-gradient(180deg,rgba(255,255,255,.10),transparent 70%);filter:blur(30px);transform-origin:top center;mix-blend-mode:screen;pointer-events:none;opacity:.7}
 .beam.l{left:-6vw;rotate:-18deg;animation:sway 9s ease-in-out infinite alternate}
@@ -204,43 +204,6 @@ section{position:relative;scroll-margin-top:72px}
 .honor:hover b{color:#fff}
 .honor p{margin-top:18px;font-weight:600;font-size:17px;line-height:1.4}
 .honors-ball{position:absolute;right:-180px;top:-180px;width:560px;opacity:.09;pointer-events:none}
-
-/* modelo de jogo */
-.model{padding:clamp(90px,10vw,140px) 0;background:var(--ink)}
-.model-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:stretch}
-.board{position:relative;background:#0f1d14;border:1px solid var(--line-dark);overflow:hidden}
-.board svg{display:block;width:100%;height:auto}
-.board .pitch-lines *{fill:none;stroke:rgba(255,255,255,.22);stroke-width:2}
-.board .stripe{fill:rgba(255,255,255,.025)}
-.board .player{transition:transform 1s var(--ease)}
-.board .player circle{fill:var(--red);stroke:#fff;stroke-width:2.5}
-.board .player.gk circle{fill:var(--gold)}
-.board .player text{fill:#fff;font:800 14px var(--display);text-anchor:middle;dominant-baseline:central}
-.board .layer{opacity:0;transition:opacity .5s}
-.board .layer.on{opacity:1}
-.board .arrow{fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-dasharray:var(--len);stroke-dashoffset:var(--len)}
-.board .arrow.dash{stroke-dasharray:8 8}
-.board .layer.on .arrow{animation:draw 1.2s var(--ease) forwards;animation-delay:var(--d,.3s)}
-.board .layer.on .arrow.dash{animation:fadein .6s forwards;animation-delay:var(--d,.3s);opacity:0}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes fadein{to{opacity:1}}
-.board .zone{fill:rgba(200,20,42,.18);stroke:var(--red);stroke-width:2;stroke-dasharray:6 6}
-.board .ring{fill:none;stroke:var(--gold);stroke-width:2.5;stroke-dasharray:4 6;transform-box:fill-box;transform-origin:center}
-.board .layer.on .ring{animation:spin 8s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.board .ball{fill:#fff}
-.board .lbl{fill:var(--gold);font:800 22px var(--display);letter-spacing:.06em}
-.board-photo{position:absolute;right:16px;bottom:16px;width:28%;aspect-ratio:1;border:3px solid #fff;box-shadow:0 20px 40px rgba(0,0,0,.5);overflow:hidden}
-.board-photo img{width:100%;height:100%;object-fit:cover;object-position:60% 25%}
-.phases{display:flex;flex-direction:column;border-top:1px solid var(--line-dark)}
-.phase{text-align:left;display:grid;grid-template-columns:44px 1fr;gap:0 14px;padding:20px 0;border-bottom:1px solid var(--line-dark);transition:.3s}
-.phase span{font:800 18px/1.3 var(--display);color:var(--muted)}
-.phase h3{font:800 26px/1.1 var(--display);text-transform:uppercase;color:rgba(255,255,255,.55);transition:color .3s}
-.phase p{grid-column:2;max-height:0;overflow:hidden;opacity:0;font-size:15px;line-height:1.6;color:var(--muted);transition:max-height .5s var(--ease),opacity .4s,margin .4s}
-.phase:hover h3{color:#fff}
-.phase[aria-selected=true] span{color:var(--red)}
-.phase[aria-selected=true] h3{color:#fff}
-.phase[aria-selected=true] p{max-height:140px;opacity:1;margin-top:8px}
 
 /* comissão + referências */
 .people{background:var(--paper);padding:clamp(90px,10vw,140px) 0}
@@ -506,7 +469,6 @@ footer .wordmark{color:#fff}
   .contact::before{background:linear-gradient(0deg,rgba(14,14,15,.98) 30%,rgba(14,14,15,.5) 65%,transparent)}
   .lightbox{padding:70px 12px}
   .lb-prev,.lb-next{top:auto;bottom:12px;translate:none}
-  .board-photo{display:none}
   .agro-art .crest{width:72px;height:72px}
   .facts{grid-template-columns:1fr}
   .facts div:nth-child(odd){padding-right:0}
@@ -524,7 +486,6 @@ footer .wordmark{color:#fff}
     <nav class="nav" aria-label="Navegação principal">
       <a href="#apresentacao" data-i18n="nav.about">Apresentação</a>
       <a href="#experiencia" data-i18n="nav.exp">Experiência</a>
-      <a href="#modelo" data-i18n="nav.model">Modelo de jogo</a>
       <a href="#fotos" data-i18n="nav.photos">Fotos</a>
       <a href="#videos" data-i18n="nav.videos">Vídeos</a>
       <a href="#imprensa" data-i18n="nav.press">Imprensa</a>
@@ -559,7 +520,7 @@ footer .wordmark{color:#fff}
       <p class="hero-role" data-i18n="hero.sub">Treinador de futebol · Licença A CBF/CONMEBOL · 15 anos formando atletas no Grêmio.</p>
       <div class="hero-ctas">
         <a class="btn btn-red" href="#apresentacao"><span data-i18n="hero.cta1">Conheça a trajetória</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="#modelo" data-i18n="hero.cta2">Modelo de jogo</a>
+        <a class="btn btn-ghost" href="#fotos" data-i18n="hero.cta2">Ver fotos</a>
       </div>
     </div>
     <div class="hero-dots" role="tablist" aria-label="Selecionar destaque">
@@ -688,73 +649,6 @@ footer .wordmark{color:#fff}
       <article class="honor rv" style="--rd:.06s"><b>06</b><p data-i18n="h6">Vice-campeão da Copa do Brasil Sub-17</p></article>
       <article class="honor rv" style="--rd:.12s"><b>07</b><p data-i18n="h7">Nove Campeonatos Estaduais Gaúchos de base</p></article>
       <article class="honor rv" style="--rd:.18s"><b>08</b><p data-i18n="h8">24 títulos nas categorias de base</p></article>
-    </div>
-  </div>
-</section>
-
-<!-- MODELO DE JOGO -->
-<section class="model" id="modelo">
-  <div class="stripes"></div><div class="glow" style="right:-25vw;top:-10%"></div>
-  <div class="wrap">
-    <div class="sec-head">
-      <div><span class="kicker rv" data-i18n="mod.k">Identidade de trabalho</span><h2 class="h2 rv" data-i18n="nav.model">Modelo de jogo</h2></div>
-      <p class="lead rv" data-i18n="mod.p">Uma equipe sólida em todos os momentos, com clareza de ideias, metodologia diária, intensidade e construção de resultados. O modelo respeita a cultura do clube e integra time, comissão técnica e atletas.</p>
-    </div>
-    <div class="model-grid">
-      <div class="board rv" aria-label="Prancheta tática ilustrando o princípio selecionado">
-        <svg viewBox="0 0 1050 680" role="img" aria-labelledby="board-title">
-          <title id="board-title">Prancheta tática</title>
-          <defs>
-            <marker id="ah" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#fff"/></marker>
-            <marker id="ahg" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c9a54a"/></marker>
-          </defs>
-          <g id="stripes"></g>
-          <g class="pitch-lines">
-            <rect x="25" y="25" width="1000" height="630"/><line x1="525" y1="25" x2="525" y2="655"/><circle cx="525" cy="340" r="88"/>
-            <rect x="25" y="170" width="160" height="340"/><rect x="25" y="255" width="55" height="170"/>
-            <rect x="865" y="170" width="160" height="340"/><rect x="970" y="255" width="55" height="170"/>
-            <path d="M185 282a88 88 0 0 1 0 116M865 282a88 88 0 0 0 0 116"/>
-          </g>
-          <!-- camadas por princípio -->
-          <g class="layer" data-layer="0">
-            <path class="arrow" style="--d:.3s" marker-end="url(#ah)" d="M210 270 Q300 230 390 330"/>
-            <path class="arrow" style="--d:.8s" marker-end="url(#ah)" d="M410 340 Q520 300 610 220"/>
-            <path class="arrow" style="--d:1.3s" marker-end="url(#ah)" d="M640 210 Q760 180 820 300"/>
-            <path class="arrow dash" style="--d:1.4s" marker-end="url(#ah)" d="M700 560 Q800 520 860 420"/>
-            <path class="arrow dash" style="--d:1.6s" marker-end="url(#ah)" d="M740 330 L900 330"/>
-          </g>
-          <g class="layer" data-layer="1">
-            <rect class="zone" x="300" y="150" width="270" height="380" rx="6"/>
-            <path class="arrow dash" style="--d:.4s" marker-end="url(#ahg)" stroke="#c9a54a" d="M610 340 L520 340"/>
-            <text class="lbl" x="310" y="140">BLOCO COMPACTO</text>
-          </g>
-          <g class="layer" data-layer="2">
-            <circle class="ring" cx="600" cy="300" r="90"/>
-            <circle class="ball" cx="600" cy="300" r="9"/>
-            <path class="arrow" style="--d:.3s" marker-end="url(#ah)" d="M520 230 L575 280"/>
-            <path class="arrow" style="--d:.4s" marker-end="url(#ah)" d="M690 220 L625 280"/>
-            <path class="arrow" style="--d:.5s" marker-end="url(#ah)" d="M520 390 L578 322"/>
-            <path class="arrow" style="--d:1.2s" marker-end="url(#ah)" d="M640 300 Q780 260 900 330"/>
-            <text class="lbl" x="545" y="190">5–7 s</text>
-          </g>
-          <g class="layer" data-layer="3">
-            <circle class="ball" cx="1012" cy="38" r="9"/>
-            <path class="arrow" style="--d:.3s;stroke:#c9a54a" marker-end="url(#ahg)" d="M1000 45 Q880 160 935 320"/>
-            <path class="arrow dash" style="--d:.9s" marker-end="url(#ah)" d="M820 420 L925 350"/>
-            <path class="arrow dash" style="--d:1s" marker-end="url(#ah)" d="M800 250 L905 300"/>
-          </g>
-          <g class="layer" data-layer="4" id="links"></g>
-          <g id="players"></g>
-        </svg>
-        <div class="board-photo"><img src="assets/novas/gabardo-modelo-jogo.webp" alt="Gabardo Júnior orientando sua equipe durante uma partida" loading="lazy"></div>
-      </div>
-      <div class="phases rv" role="tablist" aria-label="Princípios do modelo de jogo">
-        <button class="phase" role="tab" aria-selected="true"><span>01</span><h3 data-i18n="m1.t">Organização ofensiva</h3><p data-i18n="m1.p">Circulação e posse para ultrapassar linhas, chegar rapidamente ao campo de ataque e criar oportunidades.</p></button>
-        <button class="phase" role="tab" aria-selected="false"><span>02</span><h3 data-i18n="m2.t">Organização defensiva</h3><p data-i18n="m2.p">Marcação zonal e mista, compactação e controle dos espaços para neutralizar o adversário.</p></button>
-        <button class="phase" role="tab" aria-selected="false"><span>03</span><h3 data-i18n="m3.t">Transições</h3><p data-i18n="m3.p">Recuperação da posse em 5 a 7 segundos; contra-ataques verticais e agressivos ou reorganização rápida.</p></button>
-        <button class="phase" role="tab" aria-selected="false"><span>04</span><h3 data-i18n="m4.t">Bola parada</h3><p data-i18n="m4.p">Variações ensaiadas, marcação individual e por zona e ações ofensivas para gerar oportunidades.</p></button>
-        <button class="phase" role="tab" aria-selected="false"><span>05</span><h3 data-i18n="m5.t">Gestão</h3><p data-i18n="m5.p">Relações humanas, avaliações, controle do processo e soluções alinhadas à busca constante por resultados.</p></button>
-      </div>
     </div>
   </div>
 </section>
@@ -1019,52 +913,6 @@ footer .wordmark{color:#fff}
   addEventListener('load', sizePin);
   sizePin();
 
-  /* prancheta tática */
-  const NS = 'http://www.w3.org/2000/svg';
-  const stripes = $('#stripes');
-  for (let i = 0; i < 10; i += 2) {
-    const r = document.createElementNS(NS, 'rect');
-    Object.entries({ class: 'stripe', x: 25 + i * 100, y: 25, width: 100, height: 630 }).forEach(([k, v]) => r.setAttribute(k, v));
-    stripes.append(r);
-  }
-  // posições por princípio: [x,y] para 11 jogadores (GK, 4 DEF, 3 MEI, 3 ATA)
-  const F = [
-    [[70,340],[260,110],[210,270],[210,410],[260,570],[400,330],[610,210],[600,470],[840,140],[780,330],[720,560]],
-    [[70,340],[330,170],[320,280],[320,400],[330,510],[450,230],[440,340],[450,450],[560,200],[600,340],[560,480]],
-    [[70,340],[300,140],[280,280],[280,420],[300,560],[520,230],[520,390],[690,220],[800,140],[640,300],[780,520]],
-    [[70,340],[400,130],[330,300],[330,420],[400,560],[640,500],[800,250],[820,420],[930,250],[925,350],[900,450]],
-    [[70,340],[260,140],[230,280],[230,420],[260,560],[430,220],[400,340],[430,460],[680,160],[720,340],[680,520]],
-  ];
-  const playersG = $('#players'), players = F[0].map((_, i) => {
-    const g = document.createElementNS(NS, 'g'); g.setAttribute('class', 'player' + (i ? '' : ' gk'));
-    const c = document.createElementNS(NS, 'circle'); c.setAttribute('r', 19);
-    const t = document.createElementNS(NS, 'text'); t.textContent = [1,2,3,4,6,5,8,10,7,9,11][i];
-    g.append(c, t); playersG.append(g); return g;
-  });
-  // rede de conexões (Gestão)
-  const links = $('#links'), P = F[4];
-  [[0,2],[0,3],[1,2],[2,3],[3,4],[1,5],[2,6],[3,6],[4,7],[5,6],[6,7],[5,8],[6,9],[7,10],[8,9],[9,10],[1,8],[4,10]].forEach(([a,b], k) => {
-    const l = document.createElementNS(NS, 'path');
-    l.setAttribute('class', 'arrow'); l.setAttribute('d', `M${P[a]} L${P[b]}`);
-    l.style.cssText = `--d:${(.2 + k * .05).toFixed(2)}s;stroke:#c9a54a;stroke-width:2;opacity:.8`;
-    links.append(l);
-  });
-  $$('.board .arrow').forEach(p => p.style.setProperty('--len', Math.ceil(p.getTotalLength())));
-  const layers = $$('.board .layer'), tabs = $$('.phase');
-  let phaseTimer, phase = 0, userPicked = false;
-  const setPhase = i => {
-    phase = i;
-    tabs.forEach((t, k) => t.setAttribute('aria-selected', k === i));
-    layers.forEach(l => l.classList.toggle('on', +l.dataset.layer === i));
-    players.forEach((g, k) => g.style.transform = `translate(${F[i][k][0]}px,${F[i][k][1]}px)`);
-  };
-  tabs.forEach((t, i) => t.addEventListener('click', () => { userPicked = true; clearInterval(phaseTimer); setPhase(i); }));
-  players.forEach((g, k) => g.style.transform = `translate(${F[0][k][0]}px,${F[0][k][1]}px)`);
-  new IntersectionObserver(([e], o) => {
-    if (!e.isIntersecting) return; o.disconnect(); setPhase(0);
-    if (!reduce) phaseTimer = setInterval(() => { if (!userPicked) setPhase((phase + 1) % 5); }, 6000);
-  }, { threshold: .4 }).observe($('.board'));
-
   /* trilho de atletas */
   const rail = $('#rail');
   $$('[data-rail]').forEach(b => b.addEventListener('click', () => rail.scrollBy({ left: +b.dataset.rail * rail.clientWidth * .8, behavior: 'smooth' })));
@@ -1109,7 +957,7 @@ footer .wordmark{color:#fff}
   const T = {
     en: {
       'nav.about':'About','nav.exp':'Experience','nav.model':'Game model','nav.photos':'Photos','nav.videos':'Videos','nav.press':'Press','nav.contact':'Contact',
-      'hero.season':'2027 Season','hero.intro1':'Football coach','hero.scroll':'Scroll','hero.sub':'Football coach · CBF/CONMEBOL A Licence · 15 years developing players at Grêmio.','hero.role':'Football<br><span>coach</span>','hero.t1':'Football','hero.t2':'coach','hero.cta1':'Discover his career','hero.cta2':'Game model','hero.s1':'On the touchline','hero.s2':'Leadership','hero.s3':'Agro 2027',
+      'hero.season':'2027 Season','hero.intro1':'Football coach','hero.scroll':'Scroll','hero.sub':'Football coach · CBF/CONMEBOL A Licence · 15 years developing players at Grêmio.','hero.role':'Football<br><span>coach</span>','hero.t1':'Football','hero.t2':'coach','hero.cta1':'Discover his career','hero.cta2':'See photos','hero.s1':'On the touchline','hero.s2':'Leadership','hero.s3':'Agro 2027',
       'st.years':'years','st.1':'Developing players at Grêmio','st.2':'CBF / CONMEBOL licence','st.3':'Head coach since','st.4':'Youth-level titles',
       'about.cap':'Coaching from the touchline','about.badge':'Licence','about.k':'Professional coach',
       'about.p1':'Luiz Gabardo Júnior is a professional football coach with a degree in Physical Education and a CBF/CONMEBOL A Licence. Born in Porto Alegre, he has built a career combining player development, team leadership and professional football experience.',
@@ -1122,8 +970,6 @@ footer .wordmark{color:#fff}
       'c.agro':'Goiás State Championship and Brazilian Série D','c.serieC':'Brazilian Championship — Série C','c.serieD':'Brazilian Championship — Série D','c.pro':'Professional football','c.ba':'Bahia State Championship','c.rs':'Rio Grande do Sul State Championship','c.gremio':'Youth academy — U-12 to U-20',
       'hon.k':'Career results','hon.t':'Achievements','hon.p':'Results in professional football and a long list of titles in player development.',
       'h1':'Promotion to the Goiás State Championship Série A','h2':'Best coach of the Mato Grosso State Championship','h3':'Série D play-off qualification in 2021 and 2023','h4':'2024 Bahia State Championship semi-finalist','h5':'Brazilian U-15 champion with Grêmio','h6':'Runner-up in the U-17 Copa do Brasil','h7':'Nine Rio Grande do Sul youth state titles','h8':'24 youth-level titles',
-      'mod.k':'Working identity','mod.p':'A solid team in every phase of play, with clear ideas, daily methodology, intensity and the building of results. The model respects the club\'s culture and brings together team, staff and players.',
-      'm1.t':'Attacking organisation','m1.p':'Circulation and possession to break lines, reach the final third quickly and create chances.','m2.t':'Defensive organisation','m2.p':'Zonal and mixed marking, compactness and control of space to neutralise the opponent.','m3.t':'Transitions','m3.p':'Winning the ball back within 5 to 7 seconds; vertical, aggressive counter-attacks or quick reorganisation.','m4.t':'Set pieces','m4.p':'Rehearsed variations, man and zonal marking and attacking routines to create chances.','m5.t':'Management','m5.p':'Human relationships, assessments, process control and solutions aligned with the constant pursuit of results.',
       'ppl.role':'Assistant coach','ppl.k':'Integrated work','ppl.t':'Staff &amp; references','ppl.p':'A multidisciplinary structure organised to support planning, performance and decision-making — and professionals who vouch for Gabardo Júnior\'s career.','r1':'Head of Football, Brazil national team','r2':'Supervisor, Brazil national team','r3':'Football executive',
       'atl.k':'Developing talent','atl.t':'Players developed','atl.p':'Players whose development Gabardo Júnior took part in during his years in youth football.','pos.fw':'Forward','pos.mf':'Midfielder',
       'gal.k':'Career moments','gal.p':'Pitch, behind the scenes and memorable moments. Click to enlarge.',
@@ -1134,7 +980,7 @@ footer .wordmark{color:#fff}
     },
     es: {
       'nav.about':'Presentación','nav.exp':'Experiencia','nav.model':'Modelo de juego','nav.photos':'Fotos','nav.videos':'Vídeos','nav.press':'Prensa','nav.contact':'Contacto',
-      'hero.season':'Temporada 2027','hero.intro1':'Entrenador de fútbol','hero.scroll':'Desliza','hero.sub':'Entrenador de fútbol · Licencia A CBF/CONMEBOL · 15 años formando jugadores en Grêmio.','hero.role':'Entrenador<br><span>de fútbol</span>','hero.t1':'Entrenador','hero.t2':'de fútbol','hero.cta1':'Conoce su trayectoria','hero.cta2':'Modelo de juego','hero.s1':'Junto al campo','hero.s2':'Liderazgo','hero.s3':'Agro 2027',
+      'hero.season':'Temporada 2027','hero.intro1':'Entrenador de fútbol','hero.scroll':'Desliza','hero.sub':'Entrenador de fútbol · Licencia A CBF/CONMEBOL · 15 años formando jugadores en Grêmio.','hero.role':'Entrenador<br><span>de fútbol</span>','hero.t1':'Entrenador','hero.t2':'de fútbol','hero.cta1':'Conoce su trayectoria','hero.cta2':'Ver fotos','hero.s1':'Junto al campo','hero.s2':'Liderazgo','hero.s3':'Agro 2027',
       'st.years':'años','st.1':'Formando jugadores en Grêmio','st.2':'Licencia CBF / CONMEBOL','st.3':'Entrenador desde','st.4':'Títulos en categorías formativas',
       'about.cap':'Orientación junto al campo','about.badge':'Licencia','about.k':'Entrenador profesional',
       'about.p1':'Luiz Gabardo Júnior es entrenador profesional de fútbol, licenciado en Educación Física y titular de la Licencia A CBF/CONMEBOL. Nacido en Porto Alegre, ha construido su trayectoria uniendo formación de jugadores, liderazgo de equipos y experiencia en el fútbol profesional.',
@@ -1147,8 +993,6 @@ footer .wordmark{color:#fff}
       'c.agro':'Campeonato Goiano y Campeonato Brasileño — Serie D','c.serieC':'Campeonato Brasileño — Serie C','c.serieD':'Campeonato Brasileño — Serie D','c.pro':'Fútbol profesional','c.ba':'Campeonato Bahiano','c.rs':'Campeonato Gaúcho','c.gremio':'Categorías formativas — Sub-12 a Sub-20',
       'hon.k':'Resultados de carrera','hon.t':'Logros','hon.p':'Resultados en el fútbol profesional y una larga lista de títulos en la formación de jugadores.',
       'h1':'Ascenso a la Serie A del Campeonato Goiano','h2':'Mejor entrenador del Campeonato Mato-Grossense','h3':'Clasificación a los playoffs de la Serie D en 2021 y 2023','h4':'Semifinalista del Campeonato Bahiano 2024','h5':'Campeón Brasileño Sub-15 con Grêmio','h6':'Subcampeón de la Copa de Brasil Sub-17','h7':'Nueve Campeonatos Gaúchos formativos','h8':'24 títulos en categorías formativas',
-      'mod.k':'Identidad de trabajo','mod.p':'Un equipo sólido en todos los momentos, con claridad de ideas, metodología diaria, intensidad y construcción de resultados. El modelo respeta la cultura del club e integra equipo, cuerpo técnico y jugadores.',
-      'm1.t':'Organización ofensiva','m1.p':'Circulación y posesión para superar líneas, llegar rápido al campo rival y generar ocasiones.','m2.t':'Organización defensiva','m2.p':'Marcaje zonal y mixto, compactación y control de los espacios para neutralizar al rival.','m3.t':'Transiciones','m3.p':'Recuperación de la posesión en 5 a 7 segundos; contraataques verticales y agresivos o reorganización rápida.','m4.t':'Balón parado','m4.p':'Variantes ensayadas, marcaje individual y zonal y acciones ofensivas para generar ocasiones.','m5.t':'Gestión','m5.p':'Relaciones humanas, evaluaciones, control del proceso y soluciones alineadas con la búsqueda constante de resultados.',
       'ppl.role':'Asistente técnico','ppl.k':'Trabajo integrado','ppl.t':'Equipo y referencias','ppl.p':'Estructura multidisciplinaria organizada para apoyar la planificación, el rendimiento y la toma de decisiones — y profesionales que avalan la trayectoria de Gabardo Júnior.','r1':'Director de Fútbol de la Selección Brasileña','r2':'Supervisor de la Selección Brasileña','r3':'Ejecutivo de fútbol',
       'atl.k':'Formación de talentos','atl.t':'Jugadores formados','atl.p':'Jugadores en cuya formación participó Gabardo Júnior durante su trayectoria en las categorías formativas.','pos.fw':'Delantero','pos.mf':'Centrocampista',
       'gal.k':'Momentos de carrera','gal.p':'Campo, bastidores y momentos destacados. Haz clic para ampliar.',
